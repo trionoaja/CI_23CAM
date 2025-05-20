@@ -40,7 +40,7 @@
                                 <option value="">-- Pilih Kategori --</option>
                                 <?php if (!empty($kategori_berita)): ?>
                                     <?php foreach ($kategori_berita as $k): ?>
-                                        <option value="<?= $k->idkategori; ?>"><?= $k->kategori; ?></option>
+                                        <option value="<?= $k->kategori; ?>"><?= $k->kategori; ?></option>
                                     <?php endforeach; ?>
                                 <?php endif; ?>
                             </select>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="form-group">
                             <label for="Isi">Isi Berita</label>
-                            <textarea class="form-control summernote" name="isi_berita" id="isi_berita" placeholder="Isi Berita" required></textarea>
+                            <textarea class="form-control summernote" data-upload-url="<?= base_url('berita/upload_summernote_image'); ?>" name="isi_berita" id="isi_berita" placeholder="Isi Berita" required></textarea>
                         </div>
                         <div class="form-group">
                             <label for="pengirim">Pengirim</label>
