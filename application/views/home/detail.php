@@ -6,10 +6,11 @@
         <div class="card-body">
             <p><strong>Kategori:</strong> <?= $berita->kategori; ?></p>
             <p><em><?= $berita->headline; ?></em></p>
-            <div><?= $berita->isi; ?></div>
+            <div><?= $berita->isi_berita; ?></div>
         </div>
         <div class="card-footer">
-            <a href="<?= base_url('home_berita'); ?>" class="btn btn-secondary">Kembali ke Beranda</a>
+            <a href="<?= base_url('home_berita'); ?>" 
+            class="btn btn-secondary">Kembali ke Beranda</a>
         </div>
     </div>
 </div>
